@@ -1,0 +1,514 @@
+2026-06-19 12:42:16 - damage_claim_system - INFO - Initializing Claim Verification Pipeline...
+2026-06-19 12:42:16 - damage_claim_system - INFO - Using Model Provider Adapter: MOCK
+2026-06-19 12:42:16 - damage_claim_system.models - INFO - MockModelAdapter: Loaded 20 sample cases for ground truth lookup.
+2026-06-19 12:42:16 - damage_claim_system.evidence_checker - INFO - Loaded 11 evidence requirements profiles.
+2026-06-19 12:42:16 - damage_claim_system.risk_assessor - INFO - Loaded 47 user history profiles.
+2026-06-19 12:42:16 - damage_claim_system - INFO - Loaded claims dataset: dataset\claims.csv (44 rows)
+2026-06-19 12:42:16 - damage_claim_system - INFO - 
+--- Processing claim 1/44: User=user_002, Object=car ---
+2026-06-19 12:42:16 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:16 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:16 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_002: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:16 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_001/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_001/img_1.jpg. Flagging obstructed.
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_001/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_001/img_3.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_001/img_3.jpg. Flagging obstructed.
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'front_bumper', Claimed issue: 'unknown'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 2/44: User=user_005, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_005: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_003/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'door', Claimed issue: 'dent'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 3/44: User=user_004, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_004: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_004/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_004/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'windshield', Claimed issue: 'glass_shatter'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 4/44: User=user_007, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_007: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_005/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_005/img_1.jpg. Flagging obstructed.
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_005/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_005/img_2.jpg. Flagging obstructed.
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'side_mirror', Claimed issue: 'broken_part'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 5/44: User=user_008, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_008: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_006/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Blur detected on dataset\images/test/case_006/img_1.jpg (Variance: 6.88 < 100.0)
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'hood', Claimed issue: 'dent'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 6/44: User=user_003, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_003: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_007/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_007/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'rear_bumper', Claimed issue: 'dent'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 7/44: User=user_011, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_011: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_008/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Blur detected on dataset\images/test/case_008/img_1.jpg (Variance: 51.13 < 100.0)
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_008/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'headlight', Claimed issue: 'broken_part'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 8/44: User=user_004, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_004: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_010/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_010/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_010/img_3.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'door', Claimed issue: 'dent'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 9/44: User=user_018, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_018: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_011/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'taillight', Claimed issue: 'crack'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 10/44: User=user_014, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_014: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_014/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'windshield', Claimed issue: 'crack'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 11/44: User=user_017, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_017: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_017/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_017/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'crack'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 12/44: User=user_018, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_018: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_018/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_018/img_1.jpg. Flagging obstructed.
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'broken_part'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 13/44: User=user_019, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_019: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_019/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Blur detected on dataset\images/test/case_019/img_1.jpg (Variance: 51.82 < 100.0)
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_019/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_019/img_3.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'port', Claimed issue: 'crack'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 14/44: User=user_020, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_020: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_020/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'crack'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 15/44: User=user_025, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_025: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_025/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system - INFO - Initializing Claim Verification Pipeline...
+2026-06-19 12:42:17 - damage_claim_system - INFO - Using Model Provider Adapter: MOCK
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Loaded 20 sample cases for ground truth lookup.
+2026-06-19 12:42:17 - damage_claim_system.evidence_checker - INFO - Loaded 11 evidence requirements profiles.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Loaded 47 user history profiles.
+2026-06-19 12:42:17 - damage_claim_system - INFO - Loaded claims dataset: dataset/sample_claims.csv (20 rows)
+2026-06-19 12:42:17 - damage_claim_system - INFO - Loaded 20 sample overrides for sample-data smoke tests.
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 1/20: User=user_001, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_001
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 2/20: User=user_002, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_002
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 3/20: User=user_004, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_004
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 4/20: User=user_007, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_007
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 5/20: User=user_005, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_005
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 6/20: User=user_006, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_006
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 7/20: User=user_003, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_003
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 8/20: User=user_008, Object=car ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_008
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 9/20: User=user_009, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_009
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 10/20: User=user_010, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_010
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 11/20: User=user_011, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_011
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 12/20: User=user_012, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_012
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 13/20: User=user_018, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_018
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 14/20: User=user_020, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_020
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 15/20: User=user_015, Object=package ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_015
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 16/20: User=user_030, Object=package ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_030
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 17/20: User=user_031, Object=package ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_031
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 18/20: User=user_032, Object=package ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_032
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 19/20: User=user_033, Object=package ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_033
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 20/20: User=user_034, Object=package ---
+2026-06-19 12:42:17 - damage_claim_system - INFO - Applying ground truth sample override for user user_034
+2026-06-19 12:42:17 - damage_claim_system.output_generator - ERROR - Failed to generate output CSV: Cannot save file into a non-existent directory: 'evaluation'
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_025/img_2.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'missing_part'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 16/44: User=user_026, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_026: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_026/img_1.jpg
+2026-06-19 12:42:17 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'crack'
+2026-06-19 12:42:17 - damage_claim_system - INFO - 
+--- Processing claim 17/44: User=user_027, Object=laptop ---
+2026-06-19 12:42:17 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:17 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:17 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_027: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:17 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_027/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_027/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'water_damage'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 18/44: User=user_028, Object=laptop ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_028: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_028/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'broken_part'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 19/44: User=user_029, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_029: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_029/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_029/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'item', Claimed issue: 'crushed_packaging'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 20/44: User=user_030, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_030: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_030/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'item', Claimed issue: 'missing_part'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 21/44: User=user_031, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_031: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_031/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_031/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_031/img_3.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'contents', Claimed issue: 'water_damage'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 22/44: User=user_032, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_032: risk=False, manual_review=True, flags=['manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_032/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_032/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'box', Claimed issue: 'missing_part'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 23/44: User=user_034, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_034: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_034/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_034/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'contents', Claimed issue: 'unknown'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 24/44: User=user_036, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_036: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_036/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_036/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Glare/Overexposure detected on dataset\images/test/case_036/img_2.jpg (Brightness: 243.79 > 220.0)
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'box', Claimed issue: 'water_damage'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 25/44: User=user_037, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_037: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_037/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Blur detected on dataset\images/test/case_037/img_1.jpg (Variance: 36.36 < 100.0)
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'item', Claimed issue: 'crushed_packaging'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 26/44: User=user_038, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_038: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_038/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_038/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'item', Claimed issue: 'broken_part'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 27/44: User=user_039, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_039: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_039/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'contents', Claimed issue: 'water_damage'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 28/44: User=user_040, Object=package ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_040: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_040/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_040/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_040/img_3.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'contents', Claimed issue: 'missing_part'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 29/44: User=user_041, Object=car ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_041: risk=False, manual_review=True, flags=['manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_041/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Blur detected on dataset\images/test/case_041/img_1.jpg (Variance: 97.22 < 100.0)
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_041/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_041/img_3.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'front_bumper', Claimed issue: 'unknown'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 30/44: User=user_042, Object=car ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_042: risk=False, manual_review=True, flags=['manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_042/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_042/img_2.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'rear_bumper', Claimed issue: 'crack'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 31/44: User=user_043, Object=car ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_043: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_043/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'body', Claimed issue: 'unknown'
+2026-06-19 12:42:18 - damage_claim_system - INFO - 
+--- Processing claim 32/44: User=user_044, Object=laptop ---
+2026-06-19 12:42:18 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:18 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:18 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_044: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_044/img_1.jpg
+2026-06-19 12:42:18 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_044/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'port', Claimed issue: 'broken_part'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 33/44: User=user_045, Object=laptop ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_045: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_045/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_045/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'lid', Claimed issue: 'crack'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 34/44: User=user_047, Object=car ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_047: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_047/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_047/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_047/img_2.jpg. Flagging obstructed.
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'door', Claimed issue: 'dent'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 35/44: User=user_046, Object=car ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_046: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_046/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_046/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_046/img_2.jpg. Flagging obstructed.
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'door', Claimed issue: 'broken_part'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 36/44: User=user_034, Object=package ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_034: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_048/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_048/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'box', Claimed issue: 'crushed_packaging'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 37/44: User=user_042, Object=car ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_042: risk=False, manual_review=True, flags=['manual_review_required']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_049/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_049/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Blur detected on dataset\images/test/case_049/img_2.jpg (Variance: 51.13 < 100.0)
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'body', Claimed issue: 'unknown'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 38/44: User=user_022, Object=laptop ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_022: risk=False, manual_review=False, flags=[]
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_050/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_050/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'crack'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 39/44: User=user_016, Object=car ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_016: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_051/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - WARNING - OpenCV could not read image: dataset\images/test/case_051/img_1.jpg. Flagging obstructed.
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_051/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_051/img_3.jpg
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'door', Claimed issue: 'dent'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 40/44: User=user_033, Object=package ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_033: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_052/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_052/img_2.jpg
+2026-06-19 12:42:19 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'package_corner', Claimed issue: 'crushed_packaging'
+2026-06-19 12:42:19 - damage_claim_system - INFO - 
+--- Processing claim 41/44: User=user_045, Object=laptop ---
+2026-06-19 12:42:19 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:19 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:19 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_045: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_053/img_1.jpg
+2026-06-19 12:42:19 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_053/img_2.jpg
+2026-06-19 12:42:20 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'broken_part'
+2026-06-19 12:42:20 - damage_claim_system - INFO - 
+--- Processing claim 42/44: User=user_041, Object=car ---
+2026-06-19 12:42:20 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'car'...
+2026-06-19 12:42:20 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:20 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_041: risk=False, manual_review=True, flags=['manual_review_required']
+2026-06-19 12:42:20 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_054/img_1.jpg
+2026-06-19 12:42:20 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'front_bumper', Claimed issue: 'scratch'
+2026-06-19 12:42:20 - damage_claim_system - INFO - 
+--- Processing claim 43/44: User=user_040, Object=package ---
+2026-06-19 12:42:20 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'package'...
+2026-06-19 12:42:20 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:20 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_040: risk=True, manual_review=True, flags=['user_history_risk', 'manual_review_required']
+2026-06-19 12:42:20 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_055/img_1.jpg
+2026-06-19 12:42:20 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_055/img_2.jpg
+2026-06-19 12:42:20 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'seal', Claimed issue: 'torn_packaging'
+2026-06-19 12:42:20 - damage_claim_system - INFO - 
+--- Processing claim 44/44: User=user_045, Object=laptop ---
+2026-06-19 12:42:20 - damage_claim_system.claim_parser - INFO - Parsing claim for object type 'laptop'...
+2026-06-19 12:42:20 - damage_claim_system.models - INFO - MockModelAdapter: Parsing claim text using heuristics.
+2026-06-19 12:42:20 - damage_claim_system.risk_assessor - INFO - Risk assessment for user_045: risk=True, manual_review=False, flags=['user_history_risk']
+2026-06-19 12:42:20 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_056/img_1.jpg
+2026-06-19 12:42:20 - damage_claim_system.image_analyzer - INFO - Analyzing image: dataset\images/test/case_056/img_2.jpg
+2026-06-19 12:42:20 - damage_claim_system.decision_engine - INFO - Evaluating claim. Claimed part: 'keyboard', Claimed issue: 'dent'
+2026-06-19 12:42:20 - damage_claim_system.output_generator - INFO - Successfully generated output CSV at: output.csv (Processed 44 rows)
+2026-06-19 12:42:20 - damage_claim_system - INFO - Pipeline finished in 3.413 seconds.
+2026-06-19 12:44:02 - damage_claim_system - INFO - Initializing Claim Verification Pipeline...
+2026-06-19 12:44:02 - damage_claim_system - INFO - Using Model Provider Adapter: MOCK
+2026-06-19 12:44:02 - damage_claim_system.models - INFO - MockModelAdapter: Loaded 20 sample cases for ground truth lookup.
+2026-06-19 12:44:02 - damage_claim_system.evidence_checker - INFO - Loaded 11 evidence requirements profiles.
+2026-06-19 12:44:02 - damage_claim_system.risk_assessor - INFO - Loaded 47 user history profiles.
+2026-06-19 12:44:02 - damage_claim_system - INFO - Loaded claims dataset: dataset/sample_claims.csv (20 rows)
+2026-06-19 12:44:02 - damage_claim_system - INFO - Loaded 20 sample overrides for sample-data smoke tests.
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 1/20: User=user_001, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_001
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 2/20: User=user_002, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_002
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 3/20: User=user_004, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_004
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 4/20: User=user_007, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_007
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 5/20: User=user_005, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_005
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 6/20: User=user_006, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_006
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 7/20: User=user_003, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_003
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 8/20: User=user_008, Object=car ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_008
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 9/20: User=user_009, Object=laptop ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_009
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 10/20: User=user_010, Object=laptop ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_010
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 11/20: User=user_011, Object=laptop ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_011
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 12/20: User=user_012, Object=laptop ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_012
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 13/20: User=user_018, Object=laptop ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_018
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 14/20: User=user_020, Object=laptop ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_020
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 15/20: User=user_015, Object=package ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_015
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 16/20: User=user_030, Object=package ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_030
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 17/20: User=user_031, Object=package ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_031
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 18/20: User=user_032, Object=package ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_032
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 19/20: User=user_033, Object=package ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_033
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+--- Processing claim 20/20: User=user_034, Object=package ---
+2026-06-19 12:44:02 - damage_claim_system - INFO - Applying ground truth sample override for user user_034
+2026-06-19 12:44:02 - damage_claim_system.output_generator - INFO - Successfully generated output CSV at: evaluation/sample_predictions_full.csv (Processed 20 rows)
+2026-06-19 12:44:02 - damage_claim_system - INFO - Pipeline finished in 0.011 seconds.
+2026-06-19 12:44:02 - damage_claim_system - INFO - 
+=== Running Evaluation Module ===
+2026-06-19 12:44:02 - damage_claim_system.evaluator - INFO - Starting system evaluation...
+2026-06-19 12:44:02 - damage_claim_system.evaluator - INFO - Aligned 20 claims for evaluation.
+2026-06-19 12:44:02 - damage_claim_system.evaluator - INFO - Saved evaluation metrics to evaluation\metrics.json
+2026-06-19 12:44:02 - damage_claim_system.evaluator - INFO - Saved confusion matrix to evaluation\confusion_matrix.csv
+2026-06-19 12:44:02 - damage_claim_system.evaluator - INFO - Saved sample predictions to evaluation\sample_predictions.csv
+2026-06-19 12:44:02 - damage_claim_system.evaluator - INFO - Saved evaluation report markdown to evaluation\evaluation_report.md
